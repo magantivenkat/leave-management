@@ -4,8 +4,8 @@ Steps to run the app:
 2. Backend - go to LMS folder and run solution in visual studio
 3. Run entity framework migrations
    
-     dotnet ef migrations add "initial migration" 
-     dotnet ef database update
+     1. dotnet ef migrations add "initial migration" 
+     2. dotnet ef database update
 
      Admin - This will be created when you run the backend app
      Username – admin 
