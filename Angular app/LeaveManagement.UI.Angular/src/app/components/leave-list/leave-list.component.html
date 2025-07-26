@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h3>My Leave Requests</h3>
+    <a routerLink="/request" class="btn btn-success">New Request</a>
+  </div>
+
+  <div class="table-responsive shadow-sm rounded">
+    <table class="table table-hover mb-0">
+      <thead class="table-light">
+        <tr>
+          <th>From</th>
+          <th>To</th>
+          <th>Days</th>
+          <th>Status</th>
+          <th class="text-center">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let r of requests">
+          <td>{{ r.startDate }}</td>
+          <td>{{ r.endDate }}</td>
+          <td>{{ r.days }}</td>
+          <td>
+            <span class="badge" [ngClass]="{
+                'bg-warning text-dark': r.status === 'Pending',
+                'bg-success': r.status === 'Approved',
+                'bg-danger': r.status === 'Rejected'
+              }">
+              {{ r.status }}
+            </span>
+          </td>
+          <td class="text-center">
+            <button class="btn btn-primary btn-sm me-2" (click)="edit(r.id!)" [disabled]="r.status !== 'Pending'">
+              Edit
+            </button>
+            <button class="btn btn-sm btn-outline-danger" (click)="delete(r.id!)" [disabled]="r.status !== 'Pending'">
+              Retract
+            </button>
+          </td>
+        </tr>
+        <tr *ngIf="requests.length === 0">
+          <td colspan="5" class="text-center py-4 text-muted">
+            No leave requests found.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm mb-4">
+  <div class="container">
+    <a class="navbar-brand fw-bold" routerLink="">Leave Management System</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li *ngIf="this.auth.role === 'User'">
+          <a class="nav-link" routerLink="" routerLinkActive="active">My Leave Requests</a>
+        </li>
+        <li *ngIf="this.auth.role === 'Admin'" class="nav-item">
+           <a class="nav-link" routerLink="/team" routerLinkActive="active">Team Leave Requests</a>
+        </li>
+      </ul>
+      <div class="d-flex align-items-center">
+        <ng-container *ngIf="!auth.isLoggedIn; else loggedIn">
+          <a class="btn btn-outline-primary me-2" routerLink="login">Login</a>
+          <a class="btn btn-outline-success" routerLink="register">Register</a>
+        </ng-container>
+        <ng-template #loggedIn>
+          <span class="me-4">
+            Welcome, <strong>{{ auth.username }}</strong>
+          </span>
+          <span class="me-3 text-secondary">Role: {{ auth.role }}</span>
+          <button class="btn btn-outline-danger" (click)="logout()">Logout</button>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>

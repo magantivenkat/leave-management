@@ -1,0 +1,57 @@
+<!-- src/app/components/leave-request/leave-request.component.html -->
+<div class="container" style="max-width: 500px;">
+  <div class="card shadow-sm">
+    <div class="card-header bg-primary text-white">
+      <h5 class="mb-0">Request Leave</h5>
+    </div>
+    <div class="card-body">
+      <form novalidate>
+        <!-- Start Date -->
+        <div class="mb-3">
+          <label class="form-label">Start Date</label>
+          <div class="input-group">
+            <input class="form-control" placeholder="yyyy-mm-dd" name="startDate" [(ngModel)]="startDateStruct"
+              ngbDatepicker #dp1="ngbDatepicker" [markDisabled]="isDisabled" [dayTemplate]="dayTpl"
+              [navigation]="'select'" (click)="dp1.toggle()" required />
+            <button class="btn btn-outline-secondary bi bi-calendar3" (click)="dp1.toggle()"></button>
+          </div>
+        </div>
+
+        <!-- End Date -->
+        <div class="mb-3">
+          <label class="form-label">End Date</label>
+          <div class="input-group">
+            <input class="form-control" placeholder="yyyy-mm-dd" name="endDate" [(ngModel)]="endDateStruct"
+              ngbDatepicker #dp2="ngbDatepicker" [markDisabled]="isDisabled" [dayTemplate]="dayTpl"
+              [navigation]="'select'" (click)="dp2.toggle()" required />
+            <button class="btn btn-outline-secondary bi bi-calendar3" (click)="dp2.toggle()"></button>
+          </div>
+        </div>
+
+        <button type="button" (click)="submit()" class="btn btn-success w-100">
+          {{ editMode ? 'Save Changes' : 'Submit Request' }}
+        </button>
+      </form>
+    </div>
+    <div class="card-footer text-center">
+      <a routerLink="" class="text-decoration-none">Cancel</a>
+    </div>
+  </div>
+</div>
+
+<!-- Day cell template with tooltip -->
+<ng-template #dayTpl let-date let-currentMonth="currentMonth" let-focused="focused">
+  <span
+    class="custom-day"
+    [class.weekend]="isWeekend(date)"
+    [class.holiday]="holidayMap.has(toIso(date))"
+    [class.past]="isPast(date)"
+    [class.focused]="focused"
+    [class.other-month]="date.month !== currentMonth"
+    [attr.aria-label]="date.day"
+    [ngbTooltip]="holidayMap.get(toIso(date))"
+    container="body"
+  >
+    {{ date.day }}
+  </span>
+</ng-template>

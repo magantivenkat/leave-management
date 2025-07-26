@@ -1,0 +1,28 @@
+/* base cell */
+.custom-day {
+  display: inline-block;
+  width: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+/* light grey for holidays and past dates */
+.custom-day.holiday,
+.custom-day.past {
+  background-color: #f0f0f0;
+  color: #6c757d;
+  cursor: not-allowed;
+}
+
+/* dark grey when focused/hovered (active) */
+.custom-day.focused {
+  background-color: #343a40;
+  color: #fff;
+}
+
+/* keep default leap when not holiday/past/focused */
+.custom-day:not(.holiday):not(.past):hover {
+  background-color: #e2e6ea;
+}

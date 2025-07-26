@@ -54,7 +54,6 @@ C:\Users\magan\Downloads\LeaveManagementSolution (2)\LeaveManagement.API\bin\Deb
 C:\Users\magan\Downloads\LeaveManagementSolution (2)\LeaveManagement.API\bin\Debug\net9.0\System.Runtime.Caching.dll
 C:\Users\magan\Downloads\LeaveManagementSolution (2)\LeaveManagement.API\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\magan\Downloads\LeaveManagementSolution (2)\LeaveManagement.API\bin\Debug\net9.0\System.Security.Permissions.dll
-C:\Users\magan\Downloads\LeaveManagementSolution (2)\LeaveManagement.API\bin\Debug\net9.0\System.Text.Json.dll
 C:\Users\magan\Downloads\LeaveManagementSolution (2)\LeaveManagement.API\bin\Debug\net9.0\System.Windows.Extensions.dll
 C:\Users\magan\Downloads\LeaveManagementSolution (2)\LeaveManagement.API\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
 C:\Users\magan\Downloads\LeaveManagementSolution (2)\LeaveManagement.API\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
@@ -136,12 +135,6 @@ C:\Users\magan\Downloads\LeaveManagementSolution (2)\LeaveManagement.API\obj\Deb
 C:\Users\magan\Downloads\LeaveManagementSolution (2)\LeaveManagement.API\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\magan\Downloads\LeaveManagementSolution (2)\LeaveManagement.API\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\magan\Downloads\LeaveManagementSolution (2)\LeaveManagement.API\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-C:\Users\magan\Downloads\LeaveManagementSolution (2)\LeaveManagement.API\obj\Debug\net9.0\staticwebassets\msbuild.LeaveManagement.API.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\magan\Downloads\LeaveManagementSolution (2)\LeaveManagement.API\obj\Debug\net9.0\staticwebassets\msbuild.LeaveManagement.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-C:\Users\magan\Downloads\LeaveManagementSolution (2)\LeaveManagement.API\obj\Debug\net9.0\staticwebassets\msbuild.build.LeaveManagement.API.props
-C:\Users\magan\Downloads\LeaveManagementSolution (2)\LeaveManagement.API\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.LeaveManagement.API.props
-C:\Users\magan\Downloads\LeaveManagementSolution (2)\LeaveManagement.API\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.LeaveManagement.API.props
-C:\Users\magan\Downloads\LeaveManagementSolution (2)\LeaveManagement.API\obj\Debug\net9.0\staticwebassets.pack.json
 C:\Users\magan\Downloads\LeaveManagementSolution (2)\LeaveManagement.API\obj\Debug\net9.0\LeaveMan.9559AB91.Up2Date
 C:\Users\magan\Downloads\LeaveManagementSolution (2)\LeaveManagement.API\obj\Debug\net9.0\LeaveManagement.API.dll
 C:\Users\magan\Downloads\LeaveManagementSolution (2)\LeaveManagement.API\obj\Debug\net9.0\refint\LeaveManagement.API.dll
@@ -154,7 +147,6 @@ C:\Users\magan\Downloads\LeaveManagementSolution (2)\LeaveManagement.API\bin\Deb
 C:\Users\magan\Downloads\LeaveManagementSolution (2)\LeaveManagement.API\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
 C:\Users\magan\Downloads\LeaveManagementSolution (2)\LeaveManagement.API\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
 C:\Users\magan\Downloads\LeaveManagementSolution (2)\LeaveManagement.API\bin\Debug\net9.0\System.ClientModel.dll
-C:\Users\magan\Downloads\LeaveManagementSolution (2)\LeaveManagement.API\bin\Debug\net9.0\System.Formats.Asn1.dll
 C:\Users\magan\Downloads\LeaveManagementSolution (2)\LeaveManagement.API\bin\Debug\net9.0\System.Memory.Data.dll
 C:\Users\magan\Downloads\LeaveManagementSolution (2)\LeaveManagement.API\bin\Debug\net9.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
 C:\Users\magan\Downloads\LeaveManagementSolution (2)\LeaveManagement.API\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
@@ -171,3 +163,9 @@ C:\Users\magan\Downloads\LeaveManagementSolution (2)\LeaveManagement.API\bin\Deb
 C:\Users\magan\Downloads\LeaveManagementSolution (2)\LeaveManagement.API\bin\Debug\net9.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\magan\Downloads\LeaveManagementSolution (2)\LeaveManagement.API\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\magan\Downloads\LeaveManagementSolution (2)\LeaveManagement.API\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\magan\Downloads\LeaveManagementSolution (2)\LeaveManagement.API\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\magan\Downloads\LeaveManagementSolution (2)\LeaveManagement.API\obj\Debug\net9.0\LeaveManagement.API.sourcelink.json
+C:\Users\magan\Downloads\LeaveManagementSolution (2)\LeaveManagement.API\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\Users\magan\Downloads\LeaveManagementSolution (2)\LeaveManagement.API\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\Users\magan\Downloads\LeaveManagementSolution (2)\LeaveManagement.API\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\Users\magan\Downloads\LeaveManagementSolution (2)\LeaveManagement.API\obj\Debug\net9.0\staticwebassets.build.json.cache

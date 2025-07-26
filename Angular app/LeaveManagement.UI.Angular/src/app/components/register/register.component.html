@@ -1,0 +1,45 @@
+<div class="container" style="max-width: 500px;">
+  <div class="card shadow-sm">
+    <div class="card-header bg-primary text-white">
+      <h5 class="mb-0">Create Account</h5>
+    </div>
+    <div class="card-body">
+      <form (ngSubmit)="submit()" novalidate>
+        <div class="mb-3">
+          <label class="form-label">Username</label>
+          <input [(ngModel)]="username" name="username" class="form-control" required />
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Email</label>
+          <input type="email" [(ngModel)]="email" name="email" class="form-control" required />
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Full Name</label>
+          <input [(ngModel)]="fullName" name="fullName" class="form-control" required />
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Password</label>
+          <input
+            type="password"
+            [(ngModel)]="password"
+            name="password"
+            class="form-control"
+            required
+            minlength="6"
+          />
+        </div>
+
+        <div *ngIf="error" class="alert alert-danger">{{ error }}</div>
+        <div *ngIf="success" class="alert alert-success">{{ success }}</div>
+
+        <button type="submit" class="btn btn-success w-100">Register</button>
+      </form>
+    </div>
+    <div class="card-footer text-center">
+      <small>
+        Already have an account?
+        <a routerLink="login">Login here</a>
+      </small>
+    </div>
+  </div>
+</div>
