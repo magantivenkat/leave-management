@@ -8,8 +8,8 @@ Steps to run the app:
      2. dotnet ef database update
 
      Admin - This will be created when you run the backend app
-     Username – admin 
-     Password - Admin123!
+     1. Username – admin 
+     2. Password - Admin123!
    
 5. Frontend - cd to LeaveManagement.UI.Angular -> npm run start
 6. Create Employee user by Register
